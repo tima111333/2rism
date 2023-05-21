@@ -10,6 +10,7 @@ html, body{
 }
 
 .header{
+    height: 800px;
     background-color: black;
     background-image: url('../image/header-back.png');
     background-position: center center;
@@ -19,6 +20,19 @@ html, body{
 
 }
 
+.header a, header {
+    color: #fff;
+}
+
+.nav-list__link{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.nav-list__link--active{
+    opacity: 1;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -26,5 +40,35 @@ html, body{
 }
 
 .nav-list{
+    display: flex;
     column-gap: 54px;
+} 
+
+.user {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+.user__content {
+ 
+}
+.user__content span{
+    color: #fff;
+    opacity: 0.5;
+    font-size:14px;
+    line-height: 21px;
+}
+
+.user__name{
+    font-weight: 600;
+    opacity: 1;
+
+}
+
+.user__avatar {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+
 }
